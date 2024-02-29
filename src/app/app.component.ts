@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+  public title:string = 'App de angular';
+  public array:number[]= [1,2,3,4,5]
+
+  public count:number = 5
+
+
+  increaseBy( value:number): void {
+    this.count += value
+  }
+
+
+
+  resetCounter(): void{
+    this.count = 0
+  }
+
 }
+
