@@ -2,8 +2,7 @@
 
 
 <div>
-  <h3 *ngIf="deleteHero ; else nothingWasDeleted"
-  >Hèroe borrado <small class="text-danger">{{ deleteHero }}</small></h3>
+  <h3 *ngIf="deleteHero ; else nothingWasDeleted">Hèroe borrado <small class="text-danger">{{ deleteHero }}</small></h3>
 </div>
 
 
@@ -16,9 +15,7 @@
 
 
 
-<button (click)="removeLastHero()"
-  *ngIf=" heroes.length > 0 ; else nothing "
-  class="btn btn-outline-danger">
+<button (click)="removeLastHero()" *ngIf=" heroes.length > 0 ; else nothing " class="btn btn-outline-danger">
   borrar ùltimo hèroe
 </button>
 
@@ -29,6 +26,6 @@
 
 
 <ul class="mt-2 list-group">
-  <li class="list-group-item"
-  *ngFor="let name of heroes">{{ name }}</li>
+  <li class="list-group-item" *ngFor="let name of heroes">{{ name }}
+  </li>
 </ul>
